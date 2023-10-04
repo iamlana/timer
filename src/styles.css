@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 20%;
+  margin: 0 auto;
 }
 
 .stop-watch--clocks {
@@ -41,7 +42,7 @@ body {
   margin: 18px auto;
   width: 100%;
   padding: 0;
-  height: 50vh;
+  height: 40vh;
   overflow: scroll;
 }
 
