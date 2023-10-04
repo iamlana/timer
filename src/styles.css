@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #1d8251;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  text-align: center;
+}
+
+.stop-watch {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20%;
+}
+
+.stop-watch--clocks {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stop-watch--clocks__lap-clock {
+  position: absolute;
+  top: -60px;
+  width: 100%;
+}
+
+.stop-watch--controls {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+  justify-content: center;
+}
+
+.stop-watch--laps-list {
+  list-style: none;
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 18px auto;
+  width: 100%;
+  padding: 0;
+  height: 50vh;
+  overflow: scroll;
+}
+
+/* font sizes */
+.font--extra-small {
+  font-size: 20px;
+}
+
+.font--small {
+  font-size: 24px;
+}
+
+.font--medium {
+  font-size: 48px;
+}
+
+.font--large {
+  font-size: 64px;
+}
+
+/* text weight */
+
+.text--bold {
+  font-weight: 700;
+}
+
+/* text decoration */
+
+.text--underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #fff;
+}
+
+/* button */
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.6;
+}
