@@ -1,6 +1,9 @@
 .developer-info {
-  display: block;
-  margin-bottom: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #1d8251;
 }
 
