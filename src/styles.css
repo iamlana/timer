@@ -10,28 +10,35 @@ body {
   max-width: 1280px;
   display: flex;
   flex-direction: column;
-  padding-top: 20%;
+  /* padding-top: 20%; */
   margin: 0 auto;
 }
 
 .stop-watch--clocks {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -120%);
 }
 
 .stop-watch--clocks__lap-clock {
-  position: absolute;
-  top: -60px;
+  position: fixed;
   width: 100%;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -120%);
 }
 
 .stop-watch--controls {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -120%);
 }
 
 .stop-watch--laps-list {
@@ -39,12 +46,15 @@ body {
   row-gap: 10px;
   display: flex;
   flex-direction: column;
-  margin: 18px auto;
   width: 100%;
   padding: 0;
   height: 40vh;
   overflow: scroll;
   font-size: 1.125rem;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
 }
 
 /* font sizes */
