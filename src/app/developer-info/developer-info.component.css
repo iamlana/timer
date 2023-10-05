@@ -1,10 +1,6 @@
 .developer-info {
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  background-color: #1d8251;
+  padding: 20px 0;
 }
 
 .black-corner {

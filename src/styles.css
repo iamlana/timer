@@ -4,57 +4,50 @@ body {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  touch-action: manipulation;
+  overflow: hidden;
 }
 
 .stop-watch {
   max-width: 1280px;
   display: flex;
   flex-direction: column;
-  /* padding-top: 20%; */
+  height: calc(100vh - 60px);
   margin: 0 auto;
 }
 
 .stop-watch--clocks {
-  position: fixed;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -120%);
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  justify-content: end;
 }
 
 .stop-watch--clocks__lap-clock {
-  position: fixed;
-  width: 100%;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -120%);
+  flex: initial;
 }
 
 .stop-watch--controls {
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: fixed;
-  width: 100%;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -120%);
 }
 
 .stop-watch--laps-list {
   list-style: none;
+  margin: 0;
   row-gap: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0;
-  height: 40vh;
   overflow: scroll;
-  font-size: 1.125rem;
-  position: fixed;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0%);
+  font-size: 18px;
+  flex: 3;
+  margin-bottom: 20px;
 }
 
 /* font sizes */
@@ -71,20 +64,25 @@ body {
 }
 
 .font--large {
-  font-size: 3.5rem;
+  font-size: 56px;
 }
 
 @media (min-width: 376px) {
   .font--large {
-    font-size: 4rem;
+    font-size: 64px;
   }
 
   .stop-watch--controls {
-    column-gap: 2rem;
+    column-gap: 16px;
   }
 
   .stop-watch--laps-list {
-    font-size: 1.5rem;
+    font-size: 24px;
+  }
+}
+@media (max-height: 500px) {
+  * {
+    font-size: 22px !important;
   }
 }
 
