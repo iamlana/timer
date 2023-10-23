@@ -21,8 +21,8 @@
 
   <ul class="stop-watch--laps-list no-scrollbar">
     <li *ngFor="let lap of lapTimes">
-      Lap {{ lap.count | number:'2.0' }} -
-      {{ lap.time | date: "mm:ss.SSS" }} {{ lap.lapTime | date: "mm:ss.SSS" }}
+      Lap {{ lap.count | number: "2.0" }} - {{ lap.time | date: "mm:ss.SSS" }}
+      {{ lap.lapTime | date: "mm:ss.SSS" }}
     </li>
   </ul>
 

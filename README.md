@@ -1,27 +1,46 @@
-# Timer
+# Timer 🕰️
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Try it yourself now: https://timer-iamlana.netlify.app/
 
-## Development server
+![timer screenshot](src/assets/screenshot-timer.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A simple, clean, and neat timer application built with Angular.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🟢 Start: Initiates the timer.
+- 🟡 Lap: Records the current time since the timer started.
+- 🔴 Stop: Halts the timer.
 
-## Build
+## Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**: Used as the primary framework for building the application.
+- **BEM**: A CSS methodology to keep the styling structured and organized. This was my first attempt at integrating BEM, and while I'm still learning, I believe it has brought some organization to the project's CSS.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
 
-## Running end-to-end tests
+```
+git clone git@github.com:iamlana/timer.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navigate into the directory:
 
-## Further help
+```
+cd timer
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Run the application:
+
+```
+ng serve
+```
+
+5. Open your browser and navigate to http://localhost:4200/.
