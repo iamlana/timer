@@ -113,13 +113,18 @@ button {
   text-transform: uppercase;
 }
 
-button:hover {
+button {
+  transition: transform 0.2s ease;
+}
+
+button:hover:not([disabled]) {
   transform: scale(1.05);
 }
 
 button:disabled,
 button[disabled] {
   opacity: 0.6;
+  transform: none;
 }
 
 /* This will hide the scrollbar for the entire page */
