@@ -1,27 +1,32 @@
 <div class="stop-watch">
-
   <span class="stop-watch--clocks">
-    <span *ngIf="isLapClicked"
-          class="font--medium stop-watch--clocks__lap-clock">{{timeElapsed  | date:'mm:ss.SSS'}}</span>
-    <span class="text--bold font--large">{{ isLapClicked ? (lapTimeElapsed | date:'mm:ss.SSS') : (timeElapsed | date:'mm:ss.SSS')}}</span>
+    <span
+      *ngIf="isLapClicked"
+      class="font--medium stop-watch--clocks__lap-clock"
+      >{{ timeElapsed | date: "mm:ss.SSS" }}</span
+    >
+    <span class="text--bold font--large">{{
+      isLapClicked
+        ? (lapTimeElapsed | date: "mm:ss.SSS")
+        : (timeElapsed | date: "mm:ss.SSS")
+    }}</span>
   </span>
 
   <div class="stop-watch--controls text--bold">
-    <button *ngIf="isRunning"
-            (click)="onPause()">pause</button>
-    <button *ngIf="!isRunning"
-            (click)="onStart()">start</button>
-    <button (click)="onLap()"
-            [disabled]="!isRunning">lap</button>
+    <button *ngIf="isRunning" (click)="onPause()">pause</button>
+    <button *ngIf="!isRunning" (click)="onStart()">start</button>
+    <button (click)="onLap()" [disabled]="!isRunning">lap</button>
     <button (click)="onClear()">clear</button>
   </div>
 
   <ul class="stop-watch--laps-list no-scrollbar">
-    <li *ngFor="let lap of lapTimes">Lap {{lap.count | headingZeroNumber}} - {{lap.time | date:'mm:ss.SSS'}} {{lap.lapTime | date:'mm:ss.SSS'}}</li>
+    <li *ngFor="let lap of lapTimes">
+      Lap {{ lap.count | headingZeroNumber }} -
+      {{ lap.time | date: "mm:ss.SSS" }} {{ lap.lapTime | date: "mm:ss.SSS" }}
+    </li>
   </ul>
 
   <div style="flex: 1">
     <developer-info></developer-info>
   </div>
-
 </div>

@@ -6,15 +6,9 @@ import { DeveloperInfoComponent } from './developer-info/developer-info.componen
 import { HeadingZeroNumberPipe } from './pipes/heading-zero-number.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DeveloperInfoComponent,
-    HeadingZeroNumberPipe
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, DeveloperInfoComponent, HeadingZeroNumberPipe],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
